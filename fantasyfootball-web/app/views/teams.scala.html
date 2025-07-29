@@ -1,0 +1,10 @@
+@(teams: List[String])
+
+@main("Premier League Teams 25/26") {
+<h2>Premier League Teams for 2025/26 Season</h2>
+<ul>
+    @for(team <- teams) {
+    <li>@team</li>
+    }
+</ul>
+}
