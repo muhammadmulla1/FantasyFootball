@@ -1,10 +1,15 @@
-@(teams: List[String])
+@(teams: List[models.Team])(implicit request: play.api.mvc.RequestHeader)
 
 @main("Premier League Teams 25/26") {
 <h2>Premier League Teams for 2025/26 Season</h2>
 <ul>
     @for(team <- teams) {
-    <li>@team</li>
+    <li>
+        <a href="@routes.TeamsController.show(team.id)">
+            <img src="@routes.Assets.versioned("images/" + team.logo)" alt="@team.name logo" width="50"/>
+            @team.name
+        </a>
+    </li>
     }
 </ul>
 }
