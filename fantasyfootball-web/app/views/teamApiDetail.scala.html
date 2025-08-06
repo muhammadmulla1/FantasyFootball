@@ -1,0 +1,29 @@
+@(name: String, crest: String, founded: Int, clubColors: String, venue: String, squad: Seq[(String, String, String)])(implicit request: play.api.mvc.RequestHeader)
+
+@main(name) {
+<div style="text-align: center;">
+    <img src="@crest" alt="@name crest" width="100"/>
+    <h1>@name</h1>
+    <p><strong>Founded:</strong> @founded</p>
+    <p><strong>Colors:</strong> @clubColors</p>
+    <p><strong>Stadium:</strong> @venue</p>
+</div>
+
+<h2>Squad</h2>
+<table border="1" cellpadding="5" cellspacing="0">
+    <tr>
+        <th>Name</th>
+        <th>Position</th>
+        <th>Nationality</th>
+    </tr>
+    @for(player <- squad) {
+    <tr>
+        <td>@player._1</td>
+        <td>@player._2</td>
+        <td>@player._3</td>
+    </tr>
+    }
+</table>
+
+<p><a href="@routes.TeamsController.list()">← Back to Teams</a></p>
+}

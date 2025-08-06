@@ -5,10 +5,11 @@
 <ul>
     @for(team <- teams) {
     <li>
-        <a href="@routes.TeamsController.show(team.id)">
+        <a href="@routes.TeamInfoController.teamDetails(team.id)">
             <img src="@routes.Assets.versioned("images/" + team.logo)" alt="@team.name logo" width="50"/>
             @team.name
         </a>
+
     </li>
     }
 </ul>

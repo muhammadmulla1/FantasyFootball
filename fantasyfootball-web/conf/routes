@@ -6,3 +6,9 @@ GET     /greet/:name                controllers.HomeController.greet(name: Strin
 
 GET     /teams                      controllers.TeamsController.list()
 GET     /teams/:id                  controllers.TeamsController.show(id: Int)
+
+GET   /api/team/:id   controllers.TeamInfoController.teamDetails(id: Int)
+GET   /teams/api/:id   controllers.TeamInfoController.teamDetails(id: Int)
+
+
+

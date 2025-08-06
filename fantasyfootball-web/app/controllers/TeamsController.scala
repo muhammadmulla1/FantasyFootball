@@ -8,26 +8,26 @@ import models.Team
 class TeamsController @Inject()(val controllerComponents: ControllerComponents) extends BaseController {
 
   val teams = List(
-    Team(1, "AFC Bournemouth", "bournemouth.png"),
-    Team(2, "Arsenal", "arsenal.png"),
-    Team(3, "Aston Villa", "astonvilla.png"),
-    Team(4, "Brentford", "brentford.png"),
-    Team(5, "Brighton & Hove Albion", "brighton.png"),
-    Team(6, "Burnley", "burnley.png"),
-    Team(7, "Chelsea", "chelsea.png"),
-    Team(8, "Crystal Palace", "crystalpalace.png"),
-    Team(9, "Everton", "everton.png"),
-    Team(10, "Fulham", "fulham.png"),
-    Team(11, "Leeds", "leeds.png"),
-    Team(12, "Liverpool", "liverpool.png"),
-    Team(13, "Manchester City", "mancity.png"),
-    Team(14, "Manchester United", "manutd.png"),
-    Team(15, "Newcastle United", "newcastle.png"),
-    Team(16, "Nottingham Forest", "nottingham.png"),
-    Team(17, "Sunderland", "sunderland.png"),
-    Team(18, "Tottenham Hotspur", "tottenham.png"),
-    Team(19, "West Ham United", "westham.png"),
-    Team(20, "Wolverhampton Wanderers", "wolves.png")
+    Team(1044, "AFC Bournemouth", "bournemouth.png"),
+    Team(57, "Arsenal", "arsenal.png"),
+    Team(58, "Aston Villa", "astonvilla.png"),
+    Team(402, "Brentford", "brentford.png"),
+    Team(397, "Brighton & Hove Albion", "brighton.png"),
+    Team(328, "Burnley", "burnley.png"),
+    Team(61, "Chelsea", "chelsea.png"),
+    Team(354, "Crystal Palace", "crystalpalace.png"),
+    Team(62, "Everton", "everton.png"),
+    Team(63, "Fulham", "fulham.png"),
+    Team(341, "Leeds United", "leeds.png"),
+    Team(64, "Liverpool", "liverpool.png"),
+    Team(65, "Manchester City", "mancity.png"),
+    Team(66, "Manchester United", "manutd.png"),
+    Team(67, "Newcastle United", "newcastle.png"),
+    Team(351, "Nottingham Forest", "nottingham.png"),
+    Team(71, "Sunderland", "sunderland.png"),
+    Team(73, "Tottenham Hotspur", "tottenham.png"),
+    Team(563, "West Ham United", "westham.png"),
+    Team(76, "Wolverhampton Wanderers", "wolves.png")
   )
 
   def list() = Action { implicit request: Request[AnyContent] =>
